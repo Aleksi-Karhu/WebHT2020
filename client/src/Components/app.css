@@ -1,0 +1,23 @@
+html {
+    overflow-x: hidden;
+    font-family: "Lucida Console";
+    font-size: 62.5%;
+}
+html ::-webkit-scrollbar {
+    width: 8px;
+}
+html ::-webkit-scrollbar-track {
+    border-radius: 10px;
+}
+html ::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #788195;
+    padding-right: 3px;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+body * {
+    box-sizing: border-box;
+}

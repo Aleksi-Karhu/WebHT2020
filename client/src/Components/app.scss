@@ -1,0 +1,40 @@
+@font-face {
+  src: url(../assets/JosefinSans-VariableFont_wght.ttf);
+  font-family: josefin;
+}
+@font-face {
+  src: url(../assets/Poppins-Regular.ttf);
+  font-family: poppin;
+}
+@font-face {
+  src: url(../assets/NunitoSans-SemiBold.ttf);
+  font-family: nunito;
+}
+
+html {
+  overflow-x: hidden;
+  font-family: josefin;
+
+  font-size: 62.5%;
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    border-radius: 10px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #788195;
+    padding-right: 3px;
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  * {
+    box-sizing: border-box;
+  }
+}

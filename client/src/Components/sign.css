@@ -1,0 +1,89 @@
+.signin_holder {
+    display: flex;
+}
+.signin_holder .left {
+    width: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    height: 100vh;
+}
+.signin_holder .left img {
+    height: 100%;
+}
+.signin_holder .right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 65%;
+}
+.signin_holder .right .form_holder {
+    width: 45%;
+}
+.signin_holder .right .form_holder .title {
+    font-size: 3rem;
+    text-align: center;
+    color: #38a8ca;
+}
+.signin_holder .right .form_holder .subtitle {
+    font-size: 1.5rem;
+    text-align: center;
+    color: #0c0c0b;
+}
+.signin_holder .right .form_holder .form {
+    display: flex;
+    flex-direction: column;
+}
+.signin_holder .right .form_holder .form .name {
+    display: flex;
+    justify-content: space-between;
+}
+.signin_holder .right .form_holder .form .name .input {
+    width: 48%;
+}
+.signin_holder .right .form_holder .form .input {
+    margin-top: 2rem;
+}
+.signin_holder .right .form_holder .form .input .MuiOutlinedInput-input {
+    padding: 15px 14px;
+    font-size: 2rem;
+}
+.signin_holder .right .form_holder .form .input label {
+    font-size: 1.5rem;
+}
+.signin_holder .right .form_holder .form .input legend span {
+    font-size: 1.1rem;
+}
+.signin_holder .right .form_holder .form .input input, .signin_holder .right .form_holder .form .input textarea {
+    font-family: "Lucida Console";
+}
+.signin_holder .right .form_holder .form .checkbox {
+    display: flex;
+    font-size: 1.3rem;
+    font-weight: 100;
+}
+.signin_holder .right .form_holder .form .checkbox h3 {
+    opacity: 0.8;
+}
+.signin_holder .right .form_holder .form .checkbox .MuiSvgIcon-root {
+    height: 1.5rem;
+    width: 1.5rem;
+}
+.signin_holder .right .form_holder .form button {
+    outline: none;
+    font-size: 1.6rem;
+    padding: 1.3rem;
+    border: none;
+    background: #38a8ca;
+    color: white;
+    border-radius: 2px;
+    font-weight: 100;
+    margin-top: 2rem;
+}
+.signin_holder .right .form_holder .cta {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9rem;
+}
