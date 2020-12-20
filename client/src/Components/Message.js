@@ -27,17 +27,6 @@ const Message = ({ user }) => {
     });
   };
 
-  function getSender(msg_id) {
-      console.log(users[i].id);
-      var i = 0;
-      if(msg_id === users[i].id){
-        console.log(users[i].id);
-        return users[i].username;
-      } else {
-        i++;
-      }   
-  }
-
   const sendMessage = async () => {
     if (message.length > 0) {
       messages
@@ -83,7 +72,6 @@ const Message = ({ user }) => {
   return (
     <>
       <div className="msg_container">
-        {/* <h1 className="title">Your Messages</h1> */}
         <div className="msg_body">
           <div className="contacts">
             <h1 onClick={() => getMessage()}>Fellow squealers</h1>
@@ -106,15 +94,14 @@ const Message = ({ user }) => {
                     </div>
                     <div className="dets">
                       <h2 className="name">{x.username}</h2>
-                      {/* <h2 className="email">email</h2> */}
                     </div>
                   </div>
                 ))
               ) : (
-                <h1>No users on the platform</h1>
+                <h1>No other users on the platform</h1>
               )
             ) : (
-              <i className="fad fa-spin fa-spinner-third fa-x4"></i>
+              <i className="fad fa-spin fa-spinner-third fa-x4"></i> 
             )}
         </div>
           <div className="chat_box">

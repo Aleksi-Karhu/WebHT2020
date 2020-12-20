@@ -1,5 +1,4 @@
 import "./app.css";
-//import "../assets/all.css";
 import Sign from "./Sign";
 const App = () => {
   return (

@@ -23,7 +23,6 @@ server.use(express.json());
 
 mongoose
   .connect(
-    // "mongodb://localhost:27017/hirewriter",
     "mongodb+srv://WebHT_database_user1:waNZiYCBFMx5MDv8@webhtcluster.bdxcz.mongodb.net/WebHT?retryWrites=true&w=majority",
     {
       useNewUrlParser: true,
@@ -32,9 +31,9 @@ mongoose
     },
   )
   .then(() => {
-    console.log("DataBase Connected");
+    console.log("Connected to database");
   })
-  .catch(() => console.log("Unable to connect"));
+  .catch(() => console.log("Unable to connect to database"));
 
 server.use(
   morgan("INFO: :method :url :status", {
@@ -45,9 +44,11 @@ server.use(
 server.use("/api/users", userRoute);
 server.use("/api/messages", messageRoute);
 
+/*
 server.use("*", (req, res) => {
   res.sendFile(__dirname + "/client/build/index.html");
 });
+*/
 
 server.listen(port, (err) => {
   if (err) throw err;
